@@ -1,0 +1,93 @@
+Cucumber Review Notes
+
+Keywords:
+Given-precondition
+When-action
+Then-expected results
+And-continuation step
+But-
+
+Background-Common Steps for precondition that we use in that particular feature file
+
+Feature
+Scenario
+Scenario Outline with examples
+
+Data Driven Testing
+
+Step Definition:
+Implementation of code using Java and adding verification/assertion using JUnit
+
+
+Hooks: use hooks to provide pre-condition and post-condition to all scenarios we always
+create hooks class in steps package
+@Before-provides pre-condition to all scenarios in project
+@After-provides post-condition to all scenarios in project
+
+Runner Class:
+Cucumber Options(Using JUnit to run cucumber scenarios
+    Feature
+    Glue
+    Tags-can be used at scenario level and feature level
+    dryRun
+    Monochrome
+
+Maven:allows us to add dependencies and is first step in creating cucumber project
+
+pom.xml-Project Object Model
+Cucumber(java, junit, selenium, apache poi, etc)
+
+Maven has 3 repositories:
+    central- https://mvnrepository.com/    public access
+    remote- company based remote repository to avoid open source code accessible by public
+    local- repository on user desktop
+
+ Resources-
+    Feature Files
+    Config Files
+    Test Data Files
+
+ Utils-
+    Config Reader-
+    Excel Reader-
+
+
+
+#Author: your.email@your.domain.com
+
+#Keywords Summary :
+
+#Feature: List of scenarios.
+
+#Scenario: Business rule through list of steps with arguments.
+
+#Given: Some precondition step
+
+#When: Some key actions
+
+#Then: To observe outcomes or validation
+
+#And,But: To enumerate more Given,When,Then steps
+
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+
+#Examples: Container for s table
+
+#Background: List of steps run before each of the scenarios
+
+#“”" (Doc Strings)
+
+#| (Data Tables)
+
+#@ (Tags/Labels):To group Scenarios
+
+#<> (placeholder)
+
+#“”
+
+(Comments)
+#Sample Feature Definition Template
+
+What is Maven?
+
+Build Management Tool used to manage dependencies that are used in a framework.
